@@ -1,6 +1,7 @@
-#include <stdio.h> // Include standard input-output library
+#include <iostream> // Include the iostream library for input and output operations
 
-int main() { // Entry point of the program
-    printf("Hello, World!\n"); // Print message to console
-    return 0; // Exit the program
+int main() { 
+    std::cout << "Hello, World!\n"; 
+    std::cout << "Howdy?";
+    return 0; 
 }
