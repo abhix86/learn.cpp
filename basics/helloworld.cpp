@@ -1,4 +1,4 @@
-#include <iostream> // Include the iostream library for input and output operations
+#include <iostream> // Include the iostream library for I/O(input and output) operations
 
 int main() { 
     std::cout << "Hello, World!" << std::endl; 

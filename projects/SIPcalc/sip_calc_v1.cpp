@@ -69,6 +69,13 @@ int main() {
     std::cout << "Total Invested in " << years << "years " << "(" << months << " months) " << lakhsA << "lakhs" << " (" << a << ")" << std::endl;
     std::cout << "Estimated returns: " << lakhsB << "lakhs" << " (" << b << ")";
 
+    std::cout << "Calculation complete! Now, type any key and hit enter to end the program... ";
+    std::cin.ignore();  // Ignore the new line left in the buffer
+    std::cin.get();     // Wait for user input
+
+    std::cout << "Congrats! You survived the program... for now." << std::endl;
+
 
     return 0;
+
 }
