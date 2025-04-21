@@ -33,7 +33,23 @@ int main(){
     /*: age >= 18 
         ? cout << "Welcome, you've hit the adulthood!" 
         : cout << "You're still a baby, kiddo!";*/
+    if(age >= 18){
+    int num1;
+    cout << "\nWrite any digit between (1-10): ";
+    cin >> num1;
 
+    (num1 == 1) ? (cout << "The number is One"):
+    (num1 == 2) ? (cout << "The number is Two"):
+    (num1 == 3) ? (cout << "The number is Three"):
+    (num1 == 4) ? (cout << "The number is Four"):
+    (num1 == 5) ? (cout << "The number is Five"):
+    (num1 == 6) ? (cout << "The number is Six"):
+    num1 == 7 ? cout << "The number is Seven":
+    num1 == 8 ? cout << "The number is Eight":
+    num1 == 9 ? cout << "The number is Nine":
+    num1 == 10 ? cout << "The number is Ten":
+    (cout << "The number is not recognized");
+    }   
 
     return 0;
 }
