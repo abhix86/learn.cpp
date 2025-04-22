@@ -116,10 +116,9 @@ int main() {
     system("cls"); // then clears screen
 
     }
-    else{
-        cout << "\nType error: Entered value is not recognized\n\n";
-        continue;
-    }
+        else{
+            continue;
+         }
 
 }
     return 0;
