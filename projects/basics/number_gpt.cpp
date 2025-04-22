@@ -36,18 +36,43 @@ int main() {
         if(unit == 'F' || unit == 'f'){
             cout << "Enter the temperature in Celsius: ";
             cin >> temp;
+            if(cin.fail()){
+                cout << "\n\nEntered value: " << temp;
+                cout << "\nTYPE_ERROR - 0: Invalid Type: ";
+                cout << "\nERROR MESSAGE: Wanna ruin my program or what you dumb fuck ?\n\n";
+                cin.clear();              // clears the error flag
+                cin.ignore(10000, '\n');  // clears the buffer
+                continue;
 
+            }
             temp = (1.8 * temp) + 32.0;
             cout << "\n\nTemperature in F(fahrenheit) is: "<< temp << "F";
+
+            
         }
+    
         else if(unit == 'C' || unit == 'c'){
             cout << "Enter the temperature in Fahrenheit: ";
             cin >> temp;
+            if(cin.fail()){
+                cout << "\n\nEntered value: " << temp;
+                cout << "\nTYPE_ERROR - 0: Invalid Type: ";
+                cout << "\nERROR MESSAGE: Wanna ruin my program or what you dumb fuck ?";
+                cin.clear();              // clears the error flag
+                cin.ignore(10000, '\n');  // clears the buffer
+                continue;
+            }
 
             temp = (temp - 32) / 1.8;
             cout << "\n\nTemperature in C(celsius) is: " << temp << "C";
-    }
-
+        }
+        else{
+            cout << "\nTYPE_ERROR - 0: Invalid Type: \n\n";
+            cin.clear();              // clears the error flag
+            cin.ignore(10000, '\n'); 
+            continue;
+            
+        }
 
     }
 
@@ -82,16 +107,20 @@ int main() {
         (num1 == 18) ? cout << mssg << "EIGHTEEN":
         (num1 == 19) ? cout << mssg << "NINETEEN":
         (num1 == 20) ? cout << mssg << "TWENTY":
-        cout << "\n\nOOR ERROR: Given number is out of range\nEnding Terminal...";
+        cout << "\n\nEntered value: " << num1 << "\nOOR ERROR: Given number is out of range\nEnding Process...";
     }
-    }
-    
-    cin.ignore(); // ignore leftover newline
-    cout << "\n\nPress Enter to continue(*This will clear the terminal)...";
-    cin.get();    // waits for user to press Enter
+        
+    cin.ignore(10000, '\n'); // flush buffer just in case
+    cout << "\n\nPress Enter to continue...";
+    cin.get(); // waits for Enter
     system("cls"); // then clears screen
 
-}
+    }
+    else{
+        cout << "\nType error: Entered value is not recognized\n\n";
+        continue;
+    }
 
+}
     return 0;
 }
