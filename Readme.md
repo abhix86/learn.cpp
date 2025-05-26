@@ -18,4 +18,4 @@ Projects like `calculator`, `mini-games`, etc., will be placed in separate folde
 
 ---
 
-> Made with ❤️ and a lot of coffee by Abhi
+> Made by Abhi
